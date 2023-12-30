@@ -1,0 +1,20 @@
+import csv
+
+# Define the field names for the CSV file
+field_names = ['Name', 'Age', 'Gender', 'Address']
+
+# Define the patient data
+patients = [
+    {'Name': 'John Doe', 'Age': 30, 'Gender': 'Male', 'Address': '123 Main St'},
+    {'Name': 'Jane Smith', 'Age': 25, 'Gender': 'Female', 'Address': '456 Elm St'},
+    # Add more patient data as needed
+]
+
+# Specify the file path for the CSV file
+#file_path = '/c:/Users/ruth ewho/Desktop/Python_book/patient_data.csv'
+
+# Write the patient data to the CSV file
+with open(file_path, 'w', newline='') as csv_file:
+    writer = csv.DictWriter(csv_file, fieldnames=field_names)
+    writer.writeheader()
+    writer.writerows(patients)

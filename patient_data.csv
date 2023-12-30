@@ -1,0 +1,5 @@
+age,blood_pressure,cholesterol,glucose,smoker,diabetes,bmi,risk_level
+40,120,200,90,No,No,33.33,Low
+32,130,220,95,No,No,24.62,Low
+55,140,180,100,Yes,Yes,39.29,High
+28,110,210,88,No,No,25.45,Low
